@@ -1,15 +1,6 @@
 # loopback-react-webpack
 
-**Note: This example uses `loopback@2.0.0` and `loopback-boot@2.0.0`!**
-
-An example building Loopback SPA using webpack by letting browser build the
-lbclient and exposing it to webpack via externals.  Features include:
-
- - offline data access and synchronization
-
- - building lbclient with minimal grunt
-
- - building remaining react SPA with webpack
+An example building Loopback SPA using webpack by letting browserify build the loopback-client and exposing it to webpack via webpack's "externals" options.
 
 ## Install and Run
 
@@ -24,12 +15,11 @@ lbclient and exposing it to webpack via externals.  Features include:
 
 4. `npm install grunt-cli -g` - skip if you have Grunt CLI already installed.
 
-5. `mongod` - make sure mongodb is running if you want to run with
-`NODE_ENV=production`.
+6. `npm run build`
 
-6. `grunt watch` - build and run the entire project in development mode.
+7.  slc arc
 
-7.  More steps
+8.  From slc arc hit the "Play button" in upper right and follow link to http://localhost:3000
 
 ## Project layout
 
