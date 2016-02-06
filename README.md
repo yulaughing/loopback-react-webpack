@@ -37,12 +37,7 @@ The project is composed from multiple components.
 
 ## Build
 
-Loopback does not play nicely with webpack, so we use browserify (driven by a very
-  minimal gruntfile) to build /cient/lbclient/browser.bundle.js
-
-Webpack will build the SPA react applicatoin and the "client" from Loopback
-will simply be an "external"
-
+Loopback does not play nicely with webpack, so we use browserify (driven by a very minimal gruntfile) to app/browser.bundle.js
 
 #### Define a new shared model
 
