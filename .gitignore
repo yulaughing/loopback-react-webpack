@@ -22,3 +22,4 @@ server/datasources.local.js
 db.json
 node_modules
 app/client.bundle.js
+client/dist
