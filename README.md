@@ -25,14 +25,11 @@ An example building Loopback SPA using webpack by letting browserify build the l
 
 The project is composed from multiple components.
 
- - `common/models/` contains definition of models that are shared by both the server
-  and the client.
+ - `common/models/` contains definition of models that are shared by both the server and the client.
 
- - `client/lbclient/` provides an isomorphic loopback client with offline synchronization.
-  The client needs some client-only models for data synchronization. These
-  models are defined in `client/lbclient/models/`.
+ - `app/` Single Page App built with Webpack.  Able to require 'loopback-client' thanks to webpack's externals option.
 
- - `client/` is a single-page ReactJS application
+ - `client/` Loopback isomorphic client built with browserify.  Made available to Single Page App via Webpack's externals option.
 
  - `server/` is the main HTTP server that brings together all other components.
   Also сontains the REST API server; it exposes the shared models via
