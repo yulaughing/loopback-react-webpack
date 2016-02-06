@@ -8,8 +8,6 @@
     "test": "test"
   },
   "scripts": {
-    "install": "bower install",
-    "test": "grunt test",
     "build": "grunt build"
   },
   "repository": {
