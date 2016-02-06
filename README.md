@@ -10,7 +10,9 @@ An example building Loopback SPA using webpack by letting browserify build the l
 
 3. `npm install` - install the root package dependencies.
 
-4. `npm install grunt-cli -g` - skip if you have Grunt CLI already installed.
+4.  `npm install webpack -g`
+
+5. `npm install grunt-cli -g`
 
 6. `npm run build`
 
