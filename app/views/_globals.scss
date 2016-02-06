@@ -1,0 +1,40 @@
+//
+// Start by choosing your legible font
+// which is the font used for the larger
+// bodies of text - Open Sans, Lato, or Roboto
+//
+// After choosing the legible font,
+// choose a title font which
+// compliments the attitude your
+// brand has
+//
+
+// Let the logo’s color determine the one or two colors
+// for your design.
+
+// Shades of gray (including black and white) are considered
+// neutral colors and don’t count towards overall number of
+// colors
+
+// You can choose different saturations and ligntnesses
+// of the same hue.
+// As long as you stay in the same hue, this is only
+// using one color
+$primary-color: hsl(206,52,47);
+$primary-color-dark: hsl(206,52,12);
+$primary-color-light: hsl(206,100,65);
+
+$grey: whitesmoke;
+$grey-border: lightgray;
+$white: white;
+
+// Fonts
+$legible-font: Roboto;
+$legible-font-color: #66757f;
+$title-font: Roboto;
+$title-font-color: $primary-color-dark;
+
+// Sizing
+$panel-container-padding: 16px;
+$panel-content-width: 1200px - ($panel-container-padding*2);
+$standard-gutter: 16px;

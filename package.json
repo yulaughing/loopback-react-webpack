@@ -8,7 +8,11 @@
     "test": "test"
   },
   "scripts": {
-    "build": "grunt build"
+    "build": "grunt build; webpack -d",
+    "lint": "eslint 'src/**/*.@(js|jsx)'",
+    "start": "webpack-dev-server --devtool source-map --inline --progress --colors --content-base build",
+    "browserstack": "node browserstack_tunnel.js",
+"validate": "npm ls"
   },
   "repository": {
     "type": "git",
@@ -36,7 +40,34 @@
     "jshint": "^2.8.0",
     "jshint-stylish": "^0.4.0",
     "load-grunt-tasks": "^3.4.0",
-    "time-grunt": "^1.3.0"
+    "time-grunt": "^1.3.0",
+    "autoprefixer": "^6.3.1",
+    "autoprefixer-core": "^6.0.1",
+    "babel-core": "^6.3.26",
+    "babel-eslint": "^4.1.6",
+    "babel-loader": "^6.2.1",
+    "babel-plugin-transform-runtime": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "browserstacktunnel-wrapper": "^1.4.2",
+    "css-loader": "^0.23.1",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^3.1.0",
+    "eslint-plugin-react": "^3.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "node-sass": "^3.4.2",
+    "open-browser-webpack-plugin": "0.0.2",
+    "postcss-discard-comments": "^2.0.3",
+    "postcss-loader": "^0.8.0",
+    "react-css-modules": "^3.6.8",
+    "resolve-url-loader": "^1.4.3",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
     "async": "~0.9.0",
@@ -48,7 +79,14 @@
     "loopback-datasource-juggler": "^2.0.0",
     "loopback-component-explorer": "^2.1.0",
     "proquint": "0.0.1",
-    "serve-static": "^1.10.0"
+    "serve-static": "^1.10.0",
+    "babel-polyfill": "^6.3.14",
+    "babel-runtime": "^6.3.19",
+    "history": "^1.17.0",
+    "lorem-ipsum": "^1.0.3",
+    "react": "^0.14.5",
+    "react-dom": "^0.14.5",
+    "react-router": "^1.0.3"
   },
   "engines": {
     "node": ">=0.10.0"
