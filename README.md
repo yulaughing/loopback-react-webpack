@@ -4,9 +4,6 @@ An example building Loopback SPA using webpack by letting browserify build the l
 
 ## Install and Run
 
-0. You must have `node` and `git` installed. It's recommended to have `mongod`
-   installed too, so that the data is preserved across application restarts.
-
 1. Clone the repo.
 
 2. `cd loopback-react-webpack`
